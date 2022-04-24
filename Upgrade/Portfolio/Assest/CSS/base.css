@@ -1,0 +1,45 @@
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --green: #54b192;
+  --green-light: #a4cec0;
+  --grey: #3f3d56;
+  --smooth: all 0.3s ease-in;
+  --text-color: #fff;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+img {
+  max-width: 100%;
+  width: 100%;
+}
+
+button {
+  text-align: center;
+  color: var(--text-color);
+  background-color: var(--grey);
+  padding: 0.8rem 2.5rem;
+  border: none;
+  border-radius: 100px;
+  cursor: pointer;
+  transition: var(--smooth);
+}
+
+button:hover {
+  background-color: var(--green-light);
+  transition: var(--smooth);
+}
+
