@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <title>Web của Sơn</title>
+      <meta charset="UTF-8" />
+      <link rel="stylesheet" href="../Css/main.css">
+      <style>
+        .box{
+          width :calc(120px + 50px);
+          height :100px;
+          background-color:rgb(153, 73, 73);
+        }
+      </style>
+  </head>
+  <body>
+    <br>
+      <h1 style="margin-top:100px">Bài học CSS</h1>
+      <span>Ưu tiên CSS</span>
+      <ol>
+        <li>External</li>
+        <li>Internal</li>
+        <li>Tag-1</li>
+        <li>Class-10</li>
+        <li>ID-100</li>
+        <li>Inline-1000</li>
+      </ol>
+      <ul>
+        <li>Cùng gọi 1 element giống nhau thì gọi sau ưu tiên hơn</li>
+        <li>Nếu gọi tổng hợp thì tính độ ưu tiên theo như bảng trên</li>
+      </ul>
+      <span>Đơn vị CSS</span>
+      <ul>
+        <li>%- phụ thuộc vào thẻ chứa nó</li>
+        <li>rem - phụ thuộc vào thẻ html</li>
+        <li>em - phụ thuộc vào thẻ gần nhất chứa nó có thuộc tính font-size</li>
+        <li>vh viewport-height(tỉ lệ trình duyệt)</li>
+        <li>vw viewport-weight</li>
+      </ul>
+        <div>
+          <div class="box"></div>
+        </div>
+        <a href="nxs.com.vn">test thử attr()</a>
+      </br>
+        <span id="functionCSS">Function CSS</span>
+        <ul>
+          <li>rbg- chỉnh màu đỏ vàng xanh</li>
+          <li>calc- chỉnh kích thước</li>
+          <li>attr()- lấy giá trị attribute</li>
+        </ul>
+        <span>Lớp giả CSS (pseudo)</span>4
+        <ul>
+          <li>::selection - bôi xanh</li>
+          <li>::first-line - dòng đầu</li>
+          <li>::first-letter - chữ cái đầu</li>
+        </ul>
+        <span>Box-sizing - set kích thước content phù hợp dựa theo element và padding+margin</span>
+        <div class="testHeader">
+
+        </div>
+        <span>
+          Mặc định của background-clip là border-box
+        </span>
+        <ul>
+          <li>border-box tức là đổ màu cho border + padding + content (đổ màu từ border vào)</li>
+          <li>padding-box tức là chỉ đổ màu cho padding + content (đổ màu từ padding vào)</li>
+          <li>content-box tức là chỉ đổ màu cho content bỏ qua padding + border</li>
+        </ul>
+        <div class="testImage">
+
+        </div>
+        <div class="testImage2">
+          <span>
+            linear-gradient(góc thay đổi,màu đầu, màu cuối) <br>
+          </span>
+          <span>
+            background-size :
+              <li>
+                cover :cắt ảnh để lấy chiều ảnh dài nhất bù cho hiển thị
+              </li>
+              <li>
+                contain : đảm bảo ảnh kích thước fit nhất cho  đến khi đạt kích thước gốc
+              </li>
+          </span>
+          <br>
+          <span>
+            background-origin dùng với background-image tương tự<br>
+            background-clip dùng với background-color 
+          </span>
+          <span>
+            background-position: dùng để xác định vị trí với số đo tương ứng ( top, right, bottom,left)+ (2px,...)
+          </span>
+        </div>
+        <br>
+        <h2 class="positionTest">Position</h2>
+        <ul>
+          <li>Relative</li>
+          <li>Absolute</li>
+          <div id="divAbsolute">
+            <div id="divAbsoluteChild">
+            </div>
+            <span>
+              thuộc tính absolute nghĩa là thẻ phụ thuộc vị trí vào vị trí của thẻ cha gần nhất có thuộc tính position / nếu không set wh có thể dựa vào top+left+bottom+right để xác định thẻ con
+            </span>
+          </div>
+          <li>Fixed</li>
+          <div id="fixedHeader">
+
+          </div>
+          <li>Stiky</li>
+        </ul>
+    </div>
+    <div>
+      <ul>
+        <li>Header</li>
+        <li>Header</li>
+        <li>Navigation(điều hướng)</li>
+        <li>Breacrumb(xác định đang ở đâu)</li>
+        <li>Sidebar(menu)</li>
+        <li>Slider</li>
+        <li>Content(nội dung chính)</li>
+        <li>Footer</li>
+      </ul>
+    </div>
+  </body>
+</html>
